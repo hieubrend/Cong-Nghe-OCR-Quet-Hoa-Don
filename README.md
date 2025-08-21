@@ -1,48 +1,81 @@
-<img width="1616" height="558" alt="478896891-d146f0a2-b2ff-4586-bb6c-cf84c94c04f9" src="https://github.com/user-attachments/assets/b0756efb-814e-4f31-a8ae-1aa88fa48491" />
+<img width="1600" alt="demo-app" src="https://github.com/user-attachments/assets/b0756efb-814e-4f31-a8ae-1aa88fa48491" />
+🧾 Ứng Dụng Quản Lý & Nhận Diện Hóa Đơn
+📌 Tổng quan
 
-🧾 Xuất Thông Tin Hóa Đơn Siêu Thị - OCR
+Đây là một ứng dụng web hỗ trợ người dùng tải lên hóa đơn (ảnh/PDF) và áp dụng công nghệ OCR (Tesseract.js) kết hợp AI (Gemini) để:
 
-Ứng dụng web giúp tải lên, phân tích và quản lý hóa đơn siêu thị bằng công nghệ OCR (Tesseract.js) kết hợp với AI (Gemini API). Dữ liệu có thể được lưu trữ và quản lý trên Firebase Firestore.
+Trích xuất văn bản từ hóa đơn.
 
-🚀 Tính năng chính
+Phân tích, bóc tách dữ liệu quan trọng như: cửa hàng, ngày mua, tổng tiền, danh sách mặt hàng.
 
-📷 Nhận diện hóa đơn từ ảnh (JPEG, PNG) hoặc file PDF.
+Cho phép lưu trữ và tìm kiếm hóa đơn dễ dàng với Firebase Firestore.
 
-🌐 Hỗ trợ đa ngôn ngữ (Tiếng Việt, English, tự động nhận diện).
+<img width="1400" alt="ocr-preview" src="https://github.com/user-attachments/assets/1b42f882-5738-495f-8e1f-bee58a879e41" />
+🚀 Các chức năng chính
 
-🤖 Trích xuất thông minh bằng AI (Gemini API):
+🔤 OCR đa ngôn ngữ: Hỗ trợ nhận diện Tiếng Việt, Tiếng Anh hoặc chế độ tự động.
 
-Tên cửa hàng
+🤖 Phân tích bằng AI: Gemini tự động phân loại và sắp xếp thông tin từ văn bản.
 
-Ngày hóa đơn
+👀 Xem & Tìm kiếm:
 
-Tổng tiền
+Hiển thị chi tiết kết quả phân tích.
 
-Danh sách sản phẩm (tên, số lượng, giá)
+Tìm hóa đơn đã lưu theo cửa hàng, ngày hoặc tổng tiền.
 
-💾 Lưu hóa đơn vào Firebase Firestore (theo từng user).
+📑 Xuất & chia sẻ dữ liệu:
 
-🔍 Tra cứu hóa đơn đã lưu theo tên cửa hàng, ngày hoặc tổng tiền.
+Copy thông tin vào clipboard.
 
-📊 Xuất dữ liệu sang Excel.
+Xuất ra file Excel (.xlsx).
 
-📋 Sao chép dữ liệu hóa đơn nhanh chóng.
+Lưu trực tiếp lên Firestore để quản lý lâu dài.
 
-🗑️ Xóa hóa đơn đã lưu trong Firebase.
+🗂️ Quản lý dữ liệu:
 
-🛠️ Công nghệ sử dụng
+Xem lại toàn bộ hóa đơn đã lưu.
 
-Tesseract.js
- – OCR để đọc văn bản từ hình ảnh.
+Xóa khi không cần thiết.
 
-Google Gemini API
- – Phân tích thông tin hóa đơn.
+🛠️ Công nghệ tích hợp
 
-Firebase
- – Xác thực và Firestore Database.
+Giao diện: HTML5, TailwindCSS, JavaScript.
 
-TailwindCSS
- – Giao diện hiện đại, responsive.
+Nhận diện văn bản: Tesseract.js
+.
 
-SheetJS (xlsx)
- – Xuất dữ liệu ra file Excel.
+Trí tuệ nhân tạo: Google Gemini API.
+
+Cơ sở dữ liệu: Firebase Firestore.
+
+Đăng nhập: Firebase Authentication (ẩn danh).
+
+📂 Cấu trúc dự án
+
+BTLApp.html → chứa toàn bộ giao diện và logic chính.
+
+Gồm 2 phần chính:
+
+Upload & Phân tích (người dùng tải hóa đơn lên).
+
+Hóa đơn đã lưu (quản lý & tìm kiếm dữ liệu).
+
+⚡ Hướng dẫn sử dụng
+
+Tải file BTLApp.html về máy tính.
+
+Mở trực tiếp trên trình duyệt (Chrome/Edge/Firefox).
+
+Tải lên hình ảnh hoặc PDF hóa đơn.
+
+Xem kết quả phân tích ở phần hiển thị bên phải.
+
+Có thể xuất ra Excel hoặc lưu lên Firebase để quản lý.
+
+📸 Giao diện người dùng
+
+Thiết kế hiện đại với TailwindCSS.
+
+Hỗ trợ xem trước ảnh trước khi xử lý.
+
+Kết quả hiển thị rõ ràng: bảng sản phẩm + tổng tiền nổi bật.
