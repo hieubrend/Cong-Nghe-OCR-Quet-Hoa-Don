@@ -1,3 +1,5 @@
+<img width="1616" height="558" alt="478896891-d146f0a2-b2ff-4586-bb6c-cf84c94c04f9" src="https://github.com/user-attachments/assets/b0756efb-814e-4f31-a8ae-1aa88fa48491" />
+
 🧾 Xuất Thông Tin Hóa Đơn Siêu Thị - OCR
 
 Ứng dụng web giúp tải lên, phân tích và quản lý hóa đơn siêu thị bằng công nghệ OCR (Tesseract.js) kết hợp với AI (Gemini API). Dữ liệu có thể được lưu trữ và quản lý trên Firebase Firestore.
